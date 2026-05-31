@@ -1,0 +1,322 @@
+/* Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("Background.png") center/cover no-repeat;
+  filter: brightness(0.35);
+  z-index: -1;
+}
+
+/* Container */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: #f5d28a;
+  font-family: "Georgia", serif;
+}
+
+/* Logo */
+.logo {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+/* Titles */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #e8c98a;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Rating buttons */
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.rate {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #f5d28a;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.green {
+  background: #1f6f6f;
+}
+
+.red {
+  background: #8b1e1e;
+}
+
+/* Note */
+.note {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #e8c98a;
+}
+
+/* Contact button */
+.contact-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 2px solid #f5d28a;
+  color: #f5d28a;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.contact-btn:hover {
+  background: #f5d28a;
+  color: black;
+}
+
+.fake-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.fake-form input,
+.fake-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #f5d28a;
+  background: rgba(0,0,0,0.4);
+  color: #f5d28a;
+  font-size: 16px;
+}
+
+.fake-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.fake-form button {
+  padding: 12px;
+  background: #f5d28a;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-box {
+  background: black;
+  border: 2px solid #f5d28a;
+  padding: 25px;
+  width: 85%;
+  max-width: 380px;
+  text-align: center;
+  color: #f5d28a;
+  border-radius: 10px;
+}
+
+.popup-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.google-img {
+  width: 180px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.popup-small {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.contact-btn.small {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  color: #f5d28a;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.close-popup:hover {
+  color: white;
+}
+
+/* PAGINA NEGATIVA */
+.negative-body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 30px 15px;
+}
+
+.negative-container {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.negative-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.negative-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.negative-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* BOX BIANCO */
+.negative-box {
+  background: white;
+  color: black;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.negative-box-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.negative-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.negative-form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.negative-form input,
+.negative-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.negative-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.negative-form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.negative-form button:hover {
+  background: white;
+  color: black;
+}
+
+.thank-you {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.exit-top-right {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 9999;
+  transition: 0.2s;
+}
+
+.exit-top-right:hover {
+  color: #bbbbbb;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .rate {
+    width: 48px;
+    height: 48px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gentlemen’s Barber - Segnalazione Cliente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="negative-body">
+
+    <div class="exit-top-right" onclick="goHome()">✕</div>
+
+  <div class="negative-container">
+
+    <img src="Logo.png" class="negative-logo" alt="Logo">
+
+    <h2 class="negative-title">Gentlemen’s Barber</h2>
+
+    <p class="negative-subtitle">
+      Ci impegniamo per la soddisfazione del cliente al 100%.<br>
+      Dicci cosa avremmo potuto fare meglio e ti contatteremo.
+    </p>
+
+   <div class="negative-box">
+
+  <h3 class="negative-box-title">👇 Lascia la tua segnalazione 👇</h3>
+
+  <form id="negativeForm" class="negative-form" onsubmit="return sendNegative(event)">
+    <label>Nome *</label>
+    <input type="text" required>
+
+    <label>Cognome</label>
+    <input type="text">
+
+    <label>Email *</label>
+    <input type="email" required>
+
+    <label>Messaggio</label>
+    <textarea></textarea>
+
+    <button type="submit">Invia</button>
+  </form>
+
+  <p id="thankYouMessage" class="thank-you hidden">
+    Grazie per darci un po' del tuo tempo per migliorare
+  </p>
+
+</div>
+
+  </div>
+
+  <script>
+  function sendNegative(event) {
+    event.preventDefault(); // evita il refresh
+
+    // nasconde il form
+    document.getElementById("negativeForm").classList.add("hidden");
+
+    // mostra il messaggio di ringraziamento
+    document.getElementById("thankYouMessage").classList.remove("hidden");
+
+    return false;
+  }
+
+  function goHome() {
+    window.location.href = "index.html";
+  }
+</script>
+
+
+</body>
+</html>

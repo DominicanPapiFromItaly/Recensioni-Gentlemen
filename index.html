@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gentlemen's Barber - Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+
+    <img src="Logo.png" alt="Gentlemen's Barber Logo" class="logo" />
+
+    <h2 class="title">Gentlemen’s Barber</h2>
+
+    <p class="subtitle">
+      Ti chiediamo di dedicare un momento per rivedere la tua esperienza con noi.<br>
+      Il tuo feedback ci aiuta a migliorare e ad aiutare nuovi clienti.
+    </p>
+
+    <h3 class="question">Ci consiglieresti?</h3>
+
+    <div class="rating">
+      <button class="rate green" onclick="showGoogle()">⭐ 5</button>
+      <button class="rate green" onclick="showGoogle()">⭐ 4</button>
+
+      <a class="rate red" href="negativa.html">⭐ 3</a>
+      <a class="rate red" href="negativa.html">⭐ 2</a>
+      <a class="rate red" href="negativa.html">⭐ 1</a>
+    </div>
+
+    <p class="note">
+      Se la tua esperienza non è stata eccezionale, vogliamo sistemarla.
+    </p>
+
+    <a class="contact-btn" href="https://wa.me/393313294477?text=Ciao%20Gentlemen's%20Barber,%20vorrei%20parlare%20di%20un%20problema." target="_blank">
+        Contattaci
+    </a>
+
+  </div>
+
+  <!-- POPUP GOOGLE -->
+  <div id="googlePopup" class="popup hidden">
+  <div class="popup-box">
+
+    <div class="close-popup" onclick="closePopup()">✕</div>
+
+    <p class="popup-text">
+      Siamo così felici di sapere che ci consiglierai.<br>
+      Per favore condividi la tua esperienza cliccando sul logo.
+    </p>
+
+    <img src="GoogleScritta.png" class="google-img"
+         onclick="window.open('https://www.google.it/maps/place/Gentlemen%E2%80%99s+Barber/@45.6548396,13.7985296,20z/data=!4m15!1m8!3m7!1s0x477b6b1945fbe1e5:0xdce32f7df4ce9e55!2sRotonda+del+Boschetto,+34126+Trieste+TS!3b1!8m2!3d45.6547543!4d13.7980334!16s%2Fg%2F11csrgymqz!3m5!1s0x477b6bac2b5f909f:0x95e37fd091681bb4!8m2!3d45.6550037!4d13.7992076!16s%2Fg%2F11zjp75572?entry=ttu', '_blank')">
+
+    <p class="popup-small">
+      Se hai dubbi che desideri affrontare in privato, contattaci.
+    </p>
+
+    <a class="contact-btn small" href="https://wa.me/393313294477?text=Ciao%20Gentlemen's%20Barber,%20vorrei%20parlare%20di%20un%20problema." target="_blank">
+        Contattaci
+    </a>
+
+  </div>
+</div>
+
+  </div>
+
+  <script>
+    function showGoogle() {
+      document.getElementById("googlePopup").classList.remove("hidden");
+    }
+
+    function showGoogle() {
+        document.getElementById("googlePopup").classList.remove("hidden");
+    }
+
+    function closePopup() {
+        document.getElementById("googlePopup").classList.add("hidden");
+    }
+    </script>
+</body>
+</html>
